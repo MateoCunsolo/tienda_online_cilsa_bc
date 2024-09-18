@@ -8,17 +8,31 @@
     font-family: 'ITCAvanteGardeStd';
 }
 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #ececec;
+}
+
 .gradient {
     background: linear-gradient(90deg, #24343f 0%, #54749c 50%, #90c4fc 100%);
 }
 
 .header-img {
-    position: relative;
-    top: 50px;
     filter: invert(100%);
+    height: 50px !important;
 }
 
-.section-img {
-    max-width: 30px;
-    top: 0;
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enlace{
+    color: #737373;
+    text-decoration: none;
+    font-weight: bolder;
 }
