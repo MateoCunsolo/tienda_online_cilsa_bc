@@ -37,3 +37,24 @@ body {
     text-decoration: none;
     font-weight: bolder;
 }
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  
+  .contrast-body{
+      background-color: black;
+      color: white;
+  }
+  
+  .contrast-btn-primary{
+      background-color: yellow;
+      color: black;
+      border: none;
+  }
+  
+  .contrast-btn-primary:hover{
+      background-color: orange;
+  }
