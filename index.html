@@ -17,7 +17,9 @@
     <h1 class="display-10 text-light font-weight-bold">
       Cilsa sport shop with <span class="fw-bold">adidas</span>
     </h1>
-    <img src="./img/t.png" alt="imagen" class="header-img img-fluid" />
+    <a href="index.html">
+      <img src="./img/t.png" alt="imagen" class="header-img img-fluid" />
+    </a>
   </div>
 
   <!--nav-->
@@ -55,7 +57,42 @@
   </nav>
   
   <!--main-->
-  
+  <div id="carousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/index/running.jpg" class="d-block w-100 carousel-image" alt="running people">
+        <div class="carousel-caption top-0">
+          <h1 class="display-3 pt-5 mt-5">Mas que una tienda, un incentivo</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/index/acc.jpg" class="d-block w-100 carousel-image" alt="clothes store">
+        <div class="carousel-caption pb-5">
+          <a href="cloth.html"class="btn btn-primary p-2">Accesorios infaltables</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/index/shoes.jpg" class="d-block w-100 carousel-image" alt="shoes store">
+        <div class="carousel-caption pb-5">
+          <a href="cloth.html"class="btn btn-primary p-2">Equipate para salir a la pista</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <!-- JS de Bootstrap (opcional, para componentes que lo requieran) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
