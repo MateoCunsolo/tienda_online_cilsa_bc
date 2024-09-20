@@ -1,11 +1,32 @@
 
-const ruta = window.location.pathname; // Obtener la ruta del archivo HTML actual
+let accs = document.querySelector("#accs");
+let contact = document.querySelector("#contact");
+let cloth = document.querySelector("#cloth");
+let profile = document.querySelector("#profile");
+let supplements = document.querySelector("#supplements");
 
-
-//esta bien pero modificarlo a addclass ver mas tarde!!@#!#!@#!@!!
+const ruta = window.location.pathname; 
+// Obtener la ruta del archivo HTML actual
 if (ruta.includes('contact')) { 
-    document.querySelector("#contact").style.color = "black"; 
-    document.querySelector("#contact").style.fontWeight = "bold";
+    
+    contact.style.color = "black";
+    contact.style.fontWeight = "bold";
+}else if (ruta.includes('accs')) {
+    
+    accs.style.color = "black";
+    accs.style.fontWeight = "bold";
+}else if (ruta.includes('cloth')) {
+    
+    cloth.style.color = "black";
+    cloth.style.fontWeight = "bold";
+}else if (ruta.includes('profile')){
+    
+    profile.style.color = "black";
+    profile.style.fontWeight = "bold";
+}else if (ruta.includes('supplements')){
+    
+    supplements.style.color = "black";
+    supplements.style.fontWeight = "bold";
 }
 
 
@@ -78,14 +99,51 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 let clickeado = 0;
 document.querySelector('.contrast').addEventListener('click', function(event) {
     clickeado = !clickeado
+    let navbar = document.querySelector('#navbar-bk');
+    let body = document.querySelector('body');
+    let btn = document.querySelector('#btn');
+    let a = document.querySelectorAll('.nav-link');
+
+
     if(clickeado){
-        document.body.classList.add('contrast-body');
-        document.querySelector('.btn').classList.add('contrast-btn-primary');
+
+        contact.style.color = "white";
+
+        a.forEach(element => {
+            element.classList.remove('nav-black');
+        });
+
+        body.classList.add('contrast-body');
+        btn.classList.remove('btn');
+        btn.classList.remove('btn-primary');
+        btn.classList.add('contrast-btn-primary');
+        
+        navbar.style.color = 'white';
+        navbar.classList.remove('bg-light');
+        navbar.classList.remove('navbar-light');
+        mavbar.classList.add('contrast-body');
+
+      
+
     }
     else
     {
-        document.body.classList.remove('contrast-body');
-        document.querySelector('.btn').classList.remove('contrast-btn-primary');    
+
+        contact.style.color = "black";
+
+        body.classList.remove('contrast-body');
+        btn.classList.remove('contrast-btn-primary');
+        btn.classList.add('btn');
+        btn.classList.add('btn-primary');
+        navbar.style.color = 'black';
+        navbar.classList.add('bg-light');
+        navbar.classList.add('navbar-light');
+        navbar.classList.remove('contrast-body');
+
+        a.forEach(element => {
+            element.classList.add('nav-black');
+        });
+        
     }
     
-});
+}); 
