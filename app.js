@@ -204,10 +204,15 @@ if (ruta.includes('contact')) {
 
 const botonConfirmar = document.querySelector('.confirmar');
 botonConfirmar.addEventListener('click', () => {
-    document.querySelector('.carrito').innerHTML = '';
-    document.querySelector('.total').innerHTML = '$0';
-    alert('Compra confirmada, usted debe pagar $' + carrito.total.toLocaleString());
-    carrito.eliminarCarrito();
+    if (carrito.total === 0) {
+        alert('No hay productos en el carrito');
+    }else{
+        document.querySelector('.carrito').innerHTML = '';
+        document.querySelector('.total').innerHTML = '$0';
+        alert('Compra confirmada, usted debe pagar $' + carrito.total.toLocaleString() + ' por los productos. Le enviaremos un email con los detalles a seguir, gracias por su compra.');
+        carrito.eliminarCarrito();
+    }
+    
 });
 
 
