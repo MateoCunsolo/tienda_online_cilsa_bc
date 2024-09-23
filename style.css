@@ -115,3 +115,40 @@ body {
 .nav-black{
     color: black !important;
 }
+
+.carrito-img{
+    height: 100px;
+}
+
+.carrito{
+    padding: .5rem;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-item{
+    display: flex;
+    width: 150%;
+    align-items: end;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.carrito-item button{
+    width: 4rem;
+}
+
+.carrito-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+.eliminar{
+    z-index: 1;
+}

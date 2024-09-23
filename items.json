@@ -49,42 +49,42 @@
             "descripcion": "Guantes Arquero Reusch Attrakt Pro Fusion Advance Azul",
             "precio": 95000,
             "imagen": "./img/accs/guantes-arquero.jpg",
-            "link": "#"
+             "alt": "Guantes de arquero"
         },
         {
             "nombre": "Guantes Fitness",
             "descripcion": "Guantes Gimnasio Gym Entrenamiento Cuero Pesas MIR",
             "precio": 33626,
             "imagen": "./img/accs/guantes-fitness.png",
-            "link": "#"
+            "alt": "Guantes Fitness"
         },
         {
             "nombre": "Muñequeras Fitness",
             "descripcion": "Muñequeras Elásticas Entrenamiento Fitness Gadnic",
             "precio": 12999,
             "imagen": "./img/accs/munequeras.jpg",
-            "link": "#"
+            "alt": "Muñequeras Fitness"
         },
         {
             "nombre": "Rodilleras",
             "descripcion": "Rodilleras Highpro Men Etnia 32 Voley Alto Impacto Voley Handball Arquero",
             "precio": 52999,
             "imagen": "./img/accs/rodilleras.png",
-            "link": "#"
+            "alt": "Rodilleras"
         },
         {
             "nombre": "Straps de agarre",
             "descripcion": "Cintas Agarre Barra Muñequera Forma 8 Infinito Gmp (par) Color Negro",
             "precio": 15895,
             "imagen": "./img/accs/straps.jpg",
-            "link": "#"
+            "alt": "Strap de agarre"
         },
         {
             "nombre": "Bolso Deportivo",
             "descripcion": "Bolso Deportivo Adidas Urbano De Viaje Gimnasio Grande Color Negro",
             "precio": 49500,
             "imagen": "./img/accs/bolso.jpg",
-            "link": "#"
+            "alt": "Bolso Deportivo"
         }
     ],
     "cloths": [
@@ -93,96 +93,84 @@
             "descripcion": "Zapatillas Defiant Speed",
             "precio": 120999,
             "imagen": "img/clothing/defiant speed.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Zapatillas Defiant Speed"
         },
         {
             "nombre": "Zapatillas Questar 3",
             "descripcion": "Zapatillas Questar 3",
             "precio": 120999,
             "imagen": "img/clothing/questar.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Zapatillas Questar 3"
         },
         {
             "nombre": "Zapatillas X",
             "descripcion": "Zapatillas X",
             "precio": 120999,
             "imagen": "img/clothing/adidas x.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Zapatillas X"
         },
         {
             "nombre": "Zapatillas Supernova Rise",
             "descripcion": "Zapatillas Supernova Rise",
             "precio": 120999,
             "imagen": "img/clothing/supernova rise.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Zapatillas Supernova Rise"
         },
         {
             "nombre": "Remera Adizero",
             "descripcion": "Remera Adizero",
             "precio": 120999,
             "imagen": "img/clothing/adizero m.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Remera Adizero"
         },
         {
             "nombre": "Remera Gim+",
             "descripcion": "Remera Gim+",
             "precio": 120999,
             "imagen": "img/clothing/gim+.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Remera Gim+"
         },
         {
             "nombre": "Remera Adizero",
             "descripcion": "Remera Adizero",
             "precio": 120999,
             "imagen": "img/clothing/adizero.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Remera Adizero"
         },
         {
             "nombre": "Remera Aeroready",
             "descripcion": "Remera Aeroready",
             "precio": 120999,
             "imagen": "img/clothing/aeroready.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Remera Aeroready"
         },
         {
             "nombre": "Short Run It H",
             "descripcion": "Short Run It H",
             "precio": 120999,
             "imagen": "img/clothing/run it.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Short Run It H"
         },
         {
             "nombre": "Short Run It M",
             "descripcion": "Short Run It M",
             "precio": 120999,
             "imagen": "img/clothing/run it m.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Short Run It M"
         },
         {
             "nombre": "Short Brand Love",
             "descripcion": "Short Brand Love",
             "precio": 120999,
             "imagen": "img/clothing/brand love.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Short Brand Love"
         },
         {
             "nombre": "Short Adizero",
             "descripcion": "Short Adizero",
             "precio": 120999,
             "imagen": "img/clothing/short adizero m.jpg",
-            "cuotas": "3 cuotas sin interés de $00.000",
-            "link": "#"
+            "alt": "Short Adizero"
         }
     ]
 }
