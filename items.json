@@ -90,84 +90,84 @@
     "cloths": [
         {
             "nombre": "Zapatillas Defiant Speed",
-            "descripcion": "Zapatillas Defiant Speed",
+            "descripcion": "Color: Amarillo fluor ",
             "precio": 120999,
             "imagen": "img/clothing/defiant speed.jpg",
             "alt": "Zapatillas Defiant Speed"
         },
         {
             "nombre": "Zapatillas Questar 3",
-            "descripcion": "Zapatillas Questar 3",
+            "descripcion": "Color: Blanco / Gris / Amarillo fluor",
             "precio": 120999,
             "imagen": "img/clothing/questar.jpg",
             "alt": "Zapatillas Questar 3"
         },
         {
             "nombre": "Zapatillas X",
-            "descripcion": "Zapatillas X",
+            "descripcion": "Color: Rosa / Gris / Beige / Negro / Rojo",
             "precio": 120999,
             "imagen": "img/clothing/adidas x.jpg",
             "alt": "Zapatillas X"
         },
         {
             "nombre": "Zapatillas Supernova Rise",
-            "descripcion": "Zapatillas Supernova Rise",
+            "descripcion": "Color: Blanco / Gris / Negro ",
             "precio": 120999,
             "imagen": "img/clothing/supernova rise.jpg",
             "alt": "Zapatillas Supernova Rise"
         },
         {
             "nombre": "Remera Adizero",
-            "descripcion": "Remera Adizero",
+            "descripcion": "Color: Negro / Rojo / Verde / Amarillo / Azul",
             "precio": 120999,
             "imagen": "img/clothing/adizero m.jpg",
             "alt": "Remera Adizero"
         },
         {
-            "nombre": "Remera Gim+",
-            "descripcion": "Remera Gim+",
+            "nombre": "Remera Gym+",
+            "descripcion": "Color: Negro",
             "precio": 120999,
             "imagen": "img/clothing/gim+.jpg",
             "alt": "Remera Gim+"
         },
         {
             "nombre": "Remera Adizero",
-            "descripcion": "Remera Adizero",
+            "descripcion": "Color: Negro / Rojo / Verde / Amarillo / Azul",
             "precio": 120999,
             "imagen": "img/clothing/adizero.jpg",
             "alt": "Remera Adizero"
         },
         {
             "nombre": "Remera Aeroready",
-            "descripcion": "Remera Aeroready",
+            "descripcion": "Color: Negro",
             "precio": 120999,
             "imagen": "img/clothing/aeroready.jpg",
             "alt": "Remera Aeroready"
         },
         {
             "nombre": "Short Run It H",
-            "descripcion": "Short Run It H",
+            "descripcion": "Color: Negro / Azul / Verde",
             "precio": 120999,
             "imagen": "img/clothing/run it.jpg",
             "alt": "Short Run It H"
         },
         {
             "nombre": "Short Run It M",
-            "descripcion": "Short Run It M",
+            "descripcion": "Color: Rosa / Negro",
             "precio": 120999,
             "imagen": "img/clothing/run it m.jpg",
             "alt": "Short Run It M"
         },
         {
             "nombre": "Short Brand Love",
-            "descripcion": "Short Brand Love",
+            "descripcion": "Color: Blanco / Negro ",
             "precio": 120999,
             "imagen": "img/clothing/brand love.jpg",
             "alt": "Short Brand Love"
         },
         {
             "nombre": "Short Adizero",
-            "descripcion": "Short Adizero",
+            "descripcion": "Color: Negro",
             "precio": 120999,
             "imagen": "img/clothing/short adizero m.jpg",
             "alt": "Short Adizero"
