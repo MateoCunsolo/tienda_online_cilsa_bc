@@ -1,0 +1,188 @@
+{
+    "supplements": [
+        {
+            "nombre": "Pre Entreno",
+            "descripcion": "Pre entreno Pump V8 Star Nutrition",
+            "precio": 27200,
+            "imagen": "./img/supplements/pre-entreno.jpg",
+            "alt": "Pre Entreno"
+        },
+        {
+            "nombre": "Creatina Star Nutrition",
+            "descripcion": "Creatina Star Nutrition Monohidrato 300 Grs.",
+            "precio": 31300,
+            "imagen": "./img/supplements/creatina.jpg",
+            "alt": "Creatina Star Nutrition"
+        },
+        {
+            "nombre": "Whey Protein Star Nutrition",
+            "descripcion": "Proteína De Suero Star Nutrition Doypack X 2 Lb",
+            "precio": 32300,
+            "imagen": "./img/supplements/proteina-star.jpg",
+            "alt": "Whey Protein Star Nutrition"
+        },
+        {
+            "nombre": "Barrita Proteica",
+            "descripcion": "Barritas proteicas IRON BAR Gentech x unidad",
+            "precio": 900,
+            "imagen": "./img/supplements/barrita-proteica.jpg",
+            "alt": "Barrita Proteica"
+        },
+        {
+            "nombre": "Colágeno Age Biologique",
+            "descripcion": "Colágeno Hidrolizado Ac Hialuronico Age Biologique",
+            "precio": 18700,
+            "imagen": "./img/supplements/colageno-age.jpg",
+            "alt": "Colágeno Age Biologique"
+        },
+        {
+            "nombre": "Colágeno Gentech",
+            "descripcion": "Colágeno Hidrolizado Bebible Gentech x 360gs",
+            "precio": 20900,
+            "imagen": "./img/supplements/colageno-gentech.jpg",
+            "alt": "Colágeno Gentech"
+        }
+    ],
+    "accs": [
+        {
+            "nombre": "Guantes de arquero",
+            "descripcion": "Guantes Arquero Reusch Attrakt Pro Fusion Advance Azul",
+            "precio": 95000,
+            "imagen": "./img/accs/guantes-arquero.jpg",
+            "link": "#"
+        },
+        {
+            "nombre": "Guantes Fitness",
+            "descripcion": "Guantes Gimnasio Gym Entrenamiento Cuero Pesas MIR",
+            "precio": 33626,
+            "imagen": "./img/accs/guantes-fitness.png",
+            "link": "#"
+        },
+        {
+            "nombre": "Muñequeras Fitness",
+            "descripcion": "Muñequeras Elásticas Entrenamiento Fitness Gadnic",
+            "precio": 12999,
+            "imagen": "./img/accs/munequeras.jpg",
+            "link": "#"
+        },
+        {
+            "nombre": "Rodilleras",
+            "descripcion": "Rodilleras Highpro Men Etnia 32 Voley Alto Impacto Voley Handball Arquero",
+            "precio": 52999,
+            "imagen": "./img/accs/rodilleras.png",
+            "link": "#"
+        },
+        {
+            "nombre": "Straps de agarre",
+            "descripcion": "Cintas Agarre Barra Muñequera Forma 8 Infinito Gmp (par) Color Negro",
+            "precio": 15895,
+            "imagen": "./img/accs/straps.jpg",
+            "link": "#"
+        },
+        {
+            "nombre": "Bolso Deportivo",
+            "descripcion": "Bolso Deportivo Adidas Urbano De Viaje Gimnasio Grande Color Negro",
+            "precio": 49500,
+            "imagen": "./img/accs/bolso.jpg",
+            "link": "#"
+        }
+    ],
+    "cloths": [
+        {
+            "nombre": "Zapatillas Defiant Speed",
+            "descripcion": "Zapatillas Defiant Speed",
+            "precio": 120999,
+            "imagen": "img/clothing/defiant speed.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Zapatillas Questar 3",
+            "descripcion": "Zapatillas Questar 3",
+            "precio": 120999,
+            "imagen": "img/clothing/questar.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Zapatillas X",
+            "descripcion": "Zapatillas X",
+            "precio": 120999,
+            "imagen": "img/clothing/adidas x.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Zapatillas Supernova Rise",
+            "descripcion": "Zapatillas Supernova Rise",
+            "precio": 120999,
+            "imagen": "img/clothing/supernova rise.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Remera Adizero",
+            "descripcion": "Remera Adizero",
+            "precio": 120999,
+            "imagen": "img/clothing/adizero m.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Remera Gim+",
+            "descripcion": "Remera Gim+",
+            "precio": 120999,
+            "imagen": "img/clothing/gim+.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Remera Adizero",
+            "descripcion": "Remera Adizero",
+            "precio": 120999,
+            "imagen": "img/clothing/adizero.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Remera Aeroready",
+            "descripcion": "Remera Aeroready",
+            "precio": 120999,
+            "imagen": "img/clothing/aeroready.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Short Run It H",
+            "descripcion": "Short Run It H",
+            "precio": 120999,
+            "imagen": "img/clothing/run it.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Short Run It M",
+            "descripcion": "Short Run It M",
+            "precio": 120999,
+            "imagen": "img/clothing/run it m.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Short Brand Love",
+            "descripcion": "Short Brand Love",
+            "precio": 120999,
+            "imagen": "img/clothing/brand love.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        },
+        {
+            "nombre": "Short Adizero",
+            "descripcion": "Short Adizero",
+            "precio": 120999,
+            "imagen": "img/clothing/short adizero m.jpg",
+            "cuotas": "3 cuotas sin interés de $00.000",
+            "link": "#"
+        }
+    ]
+}
