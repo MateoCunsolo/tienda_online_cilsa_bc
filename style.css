@@ -117,38 +117,71 @@ body {
 }
 
 .carrito-img{
-    height: 100px;
-}
-
-.carrito{
-    padding: .5rem;
-    align-items: start;
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
-}
-
-.carrito-item{
-    display: flex;
-    width: 150%;
-    align-items: end;
-    justify-content: space-between;
-    padding: .5rem;
-}
-
-.carrito-item button{
-    width: 4rem;
-}
-
-.carrito-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    height: 80px;
     padding: 0;
     margin: 0;
 }
 
+.carrito{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-item{
+    
+    display: flex;
+    align-items: center;
+    width: 24rem;
+    gap: 1rem;
+    border: solid 1px #c9c9c9;
+    padding: .5rem .5rem .5rem 0rem;
+}
+
+.carrito-item button{
+    width: auto;
+}
+
+.carrito-info{
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.confirmar{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
 .eliminar{
     z-index: 1;
+}
+
+.titleShop{
+    width: 15rem
+}
+
+
+
+/* Media query para ocultar el carrito en pantallas pequeñas (máximo 768px de ancho) */
+@media (max-width: 1520px) {
+    .carrito-info{
+        display: none;
+    }
+
+    .carrito-item{
+        width: 100%;
+        border: none    ;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ct{
+        display: none;
+    }
 }
