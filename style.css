@@ -137,7 +137,7 @@ body {
     width: 24rem;
     gap: 1rem;
     border: solid 1px #c9c9c9;
-    padding: .5rem .5rem .5rem 0rem;
+    padding: 0 1rem ;
 }
 
 .carrito-item button{
@@ -169,19 +169,9 @@ body {
 
 /* Media query para ocultar el carrito en pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 1520px) {
-    .carrito-info{
-        display: none;
-    }
-
-    .carrito-item{
-        width: 100%;
-        border: none    ;
-    }
+    
 }
 
 @media (max-width: 768px) {
-
-    .ct{
-        display: none;
-    }
+    
 }
