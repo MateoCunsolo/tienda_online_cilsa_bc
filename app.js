@@ -109,7 +109,7 @@ function cargarSupplements() {
 
             supplements.forEach((producto, index) => {
                 const card = `
-                    <div class="col-sm-10 col-md-4 col-lg-3 card border-primary-subtle mt-3 ms-5" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-4 col-lg-3 card border-primary-subtle" style="width: 18rem;">
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
@@ -144,7 +144,7 @@ function cargarCloths() {
 
             cloths.forEach((producto, index) => {
                 const card = `
-                    <div class="col-sm-10 col-md-4 col-lg-3 card border-primary-subtle mt-3 ms-5" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-4 col-lg-3 card border-primary-subtle" style="width: 18rem;">                    
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
@@ -179,7 +179,7 @@ function cargarAccs() {
 
             accs.forEach((producto, index) => {
                 const card = `
-                    <div class="col-sm-10 col-md-4 col-lg-3 card border-primary-subtle mt-3 ms-5" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-4 col-lg-3 card border-primary-subtle" style="width: 18rem;">
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
