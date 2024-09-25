@@ -19,9 +19,19 @@
     <h1 class="display-10 text-light font-weight-bold">
       <a href="index.html"> <img class="w-25 " src="img/logo v2.png"></a></span>
     </h1>
-    <a href="index.html">
-      <img src="./img/t.png" alt="imagen" class="header-img img-fluid" />
-    </a>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        Carrito
+      </button>   
+
+      <div class="dropdown-menu p-3">
+        <h4 class="titleShop" >Shopping cart</h4>
+        <p class="total">There aren't prodcuts</p>
+        <div class="carrito">  
+        </div>
+        <button class="confirmar">Buy - Confirm</button>
+      </div>
+    </div>
   </div>
 
   <!--nav-->
@@ -60,25 +70,13 @@
   </nav>
 
  <!--main-->
- <div class="container-fluid">
-  <div class="row">
-    <div class="ct col-2 ps-4">
-      <h4 class="titleShop" >Shopping cart</h4>
-      <p class="total">There aren't prodcuts</p>
-      <div class="carrito">
-
-      </div>
-      <button class="confirmar">Buy - Confirm</button>
-    </div>
-    <div class="col-10">
-      <div class="row cloths justify-content-center ">
-
+  <div class="container-fluid">
+    <div class="row">    
+      <div class="row cloths justify-content-center m-0 gap-3">
       </div>
     </div>
   </div>
-</div>
-
-
+  
   <script src="app.js"></script>
   <!-- JS de Bootstrap (opcional, para componentes que lo requieran) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
