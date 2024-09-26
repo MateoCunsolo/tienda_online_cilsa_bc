@@ -70,7 +70,7 @@ let carrito = {
             });
             document.querySelector('.total').innerHTML = `Total: $${this.total.toLocaleString()}`;
         } else {
-            document.querySelector('.total').innerHTML = '<p class="total">There are not prodcuts</p>';
+            document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
         }
     }
 
@@ -102,7 +102,7 @@ function cargarASeccion(producto) {
         contador.innerHTML = carrito.productos.length;
         item.remove();
         if (carrito.total === 0) {
-            document.querySelector('.total').innerHTML = '<p class="total">There are not prodcuts</p>';
+            document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
             contador.classList.add('blue');
         } else {
             document.querySelector('.total').innerHTML = `Total: $${carrito.total.toLocaleString()}`;   
@@ -332,7 +332,7 @@ botonConfirmar.addEventListener('click', () => {
         alert('No hay productos en el carrito');
     } else {
         document.querySelector('.carrito').innerHTML = '';
-        document.querySelector('.total').innerHTML = '<p class="total">There are not prodcuts</p>';
+        document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
         alert('Compra confirmada, usted debe pagar $' + carrito.total.toLocaleString() + ' por los productos. Le enviaremos un email con los detalles a seguir, gracias por su compra.');
         carrito.eliminarCarrito();
         carrito.guardarCarritoLocalStorage();
