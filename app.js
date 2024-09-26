@@ -127,7 +127,6 @@ function cargarSupplements() {
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
@@ -152,7 +151,7 @@ function cargarSupplements() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                                 </div>
                             </div>
                             </div>
@@ -187,7 +186,6 @@ function cargarCloths() {
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Details</button>
@@ -247,7 +245,6 @@ function cargarAccs() {
                         <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                             
@@ -273,7 +270,7 @@ function cargarAccs() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                                 </div>
                             </div>
                             </div>
