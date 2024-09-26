@@ -116,8 +116,33 @@ function cargarSupplements() {
                             <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="modal-${index}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-${index}" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h5 class="modal-title" id="exampleModalLabel">${producto.nombre}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="${producto.imagen}" class="card-img-top p-5" alt="${producto.alt}">
+                                <div class="card-body p-5">
+                                    <p class="card-text"><strong>${producto.nombre}</strong></p>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
+                                    <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                 `;
                 container.innerHTML += card;
             });
@@ -151,8 +176,33 @@ function cargarCloths() {
                             <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="modal-${index}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-${index}" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h5 class="modal-title" id="exampleModalLabel">${producto.nombre}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="${producto.imagen}" class="card-img-top p-5" alt="${producto.alt}">
+                                <div class="card-body p-5">
+                                    <p class="card-text"><strong>${producto.nombre}</strong></p>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
+                                    <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                 `;
                 container.innerHTML += card;
             });
@@ -184,11 +234,36 @@ function cargarAccs() {
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
                             <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
-                            <h5 class="card-title
-                            ">$${producto.precio.toLocaleString()}</h5>
+                            <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                            
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="modal-${index}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-${index}" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h5 class="modal-title" id="exampleModalLabel">${producto.nombre}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="${producto.imagen}" class="card-img-top p-5" alt="${producto.alt}">
+                                <div class="card-body p-5">
+                                    <p class="card-text"><strong>${producto.nombre}</strong></p>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
+                                    <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                 `;
                 container.innerHTML += card;
             });
