@@ -151,7 +151,7 @@ function cargarSupplements() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
                                 </div>
                             </div>
                             </div>
@@ -210,7 +210,7 @@ function cargarCloths() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
                                 </div>
                             </div>
                             </div>
@@ -270,7 +270,7 @@ function cargarAccs() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
                                 </div>
                             </div>
                             </div>
