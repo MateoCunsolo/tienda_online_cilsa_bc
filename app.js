@@ -5,6 +5,7 @@ let cloth = document.querySelector("#cloth");
 let profile = document.querySelector("#profile");
 let supplements = document.querySelector("#supplements");
 const ruta = window.location.pathname;
+let contador = document.querySelector('.contador');
 
 let carrito = {
     productos: [],
@@ -20,15 +21,23 @@ let carrito = {
     },
 
     eliminarProductoCarrito(producto) {
-        this.productos = this.productos.filter(p => p.nombre !== producto.nombre);
-        this.total -= producto.precio;
-        this.guardarCarritoLocalStorage();
-        chekBotonConfirmar();
+        // Encontramos el índice del primer producto que coincide
+        const index = this.productos.findIndex(p => p.nombre === producto.nombre);
+    
+        // Si existe el producto, lo eliminamos
+        if (index !== -1) {
+            this.total -= this.productos[index].precio; // Restamos el precio
+            this.productos.splice(index, 1); 
+            this.guardarCarritoLocalStorage(); 
+            chekBotonConfirmar();
+        }
     },
+    
 
     eliminarCarrito() {
         this.productos = [];
         this.total = 0;
+        contador.innerHTML = carrito.productos.length;
     },
 
     mostrar() {
@@ -67,6 +76,8 @@ let carrito = {
 
 }
 
+
+
 function cargarASeccion(producto) {
     const contenedor = document.querySelector('.carrito');
     const item = document.createElement('div');
@@ -87,17 +98,17 @@ function cargarASeccion(producto) {
     const botonEliminar = item.querySelector('.eliminar');
     botonEliminar.addEventListener('click', () => {
         carrito.eliminarProductoCarrito(producto);
+        contador.innerHTML = carrito.productos.length;
         item.remove();
         if (carrito.total === 0) {
             document.querySelector('.total').innerHTML = '<p class="total">There are not prodcuts</p>';
         } else {
-            document.querySelector('.total').innerHTML = `Total: $${carrito.total.toLocaleString()}`;
+            document.querySelector('.total').innerHTML = `Total: $${carrito.total.toLocaleString()}`;   
         }
     });
+
+    contador.innerHTML = carrito.productos.length;
 }
-
-
-
 
 
 function cargarSupplements() {
@@ -176,7 +187,7 @@ function cargarCloths() {
                             <h6 class="card-subtitle mb-2 text-body-secondary">${producto.descripcion}</h6>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                             <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Details</button>
                         </div>
                     </div>
 
@@ -197,8 +208,8 @@ function cargarCloths() {
                                     <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary agregar-carrito" data-dismiss="modal">Comprar</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
                                 </div>
                             </div>
                             </div>

@@ -162,6 +162,15 @@ body {
     width: 15rem
 }
 
+.contador{
+    color: rgb(255, 255, 255); 
+    background-color: #ff0000;
+    border-radius: 1rem;
+    padding: 2px 5px;
+    position: relative;
+    top: -1rem;
+}
+
 
 
 /* Media query para ocultar el carrito en pantallas pequeñas (máximo 768px de ancho) */
@@ -172,3 +181,5 @@ body {
 @media (max-width: 768px) {
     
 }
+
+
