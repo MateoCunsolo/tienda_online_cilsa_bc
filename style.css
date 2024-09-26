@@ -172,6 +172,12 @@ body {
 }
 
 
+.blue{
+    color: white !important;
+    background-color: #0000ff !important;
+    display: none;
+}
+
 
 /* Media query para ocultar el carrito en pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 1520px) {

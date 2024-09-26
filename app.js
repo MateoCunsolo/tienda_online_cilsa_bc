@@ -82,6 +82,7 @@ function cargarASeccion(producto) {
     const contenedor = document.querySelector('.carrito');
     const item = document.createElement('div');
     item.classList.add('item');
+    contador.classList.remove('blue');
     item.innerHTML = `
         <div class="carrito-item">
             <img class="carrito-img" src="${producto.imagen}" alt="${producto.nombre}">
@@ -102,6 +103,7 @@ function cargarASeccion(producto) {
         item.remove();
         if (carrito.total === 0) {
             document.querySelector('.total').innerHTML = '<p class="total">There are not prodcuts</p>';
+            contador.classList.add('blue');
         } else {
             document.querySelector('.total').innerHTML = `Total: $${carrito.total.toLocaleString()}`;   
         }
@@ -109,6 +111,7 @@ function cargarASeccion(producto) {
 
     contador.innerHTML = carrito.productos.length;
 }
+
 
 
 function cargarSupplements() {
@@ -337,6 +340,8 @@ botonConfirmar.addEventListener('click', () => {
         carrito.eliminarCarrito();
         carrito.guardarCarritoLocalStorage();
         chekBotonConfirmar();
+        contador.classList.add('blue');
+
     }
 
 });
