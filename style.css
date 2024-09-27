@@ -60,12 +60,25 @@ body {
       background-color: orange;
   }
 
+ 
+  .profile {
+
+    height: 300px;
+  }
+
   .card-img-top {
+    transition: transform 0.2s; 
+    border-radius: 15px; 
+    overflow: hidden; 
     max-height: 350px;
   }
 
   .card-button {
     max-height: 40px;
+  }
+
+  .card:hover {
+    transform: scale(1.05); 
   }
 
   .carousel-item {

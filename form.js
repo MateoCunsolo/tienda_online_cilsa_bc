@@ -18,18 +18,18 @@ document.getElementById('registrationForm').addEventListener('submit', function 
     // validaciones de todos los campos
     if (name === '') {
         valid = false;
-        document.getElementById('nameError').textContent = 'Name is required';
+        document.getElementById('nameError').textContent = 'Ingrese su nombre';
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === '' || !emailRegex.test(email)) {
         valid = false;
-        document.getElementById('emailError').textContent = 'Please enter a valid email';
+        document.getElementById('emailError').textContent = 'Ingrese un email válido';
     }
 
     if (dob === '') {
         valid = false;
-        document.getElementById('dobError').textContent = 'Date of birth is required';
+        document.getElementById('dobError').textContent = 'Ingrese su fecha de nacimiento';
     } else {
         const birthDate = new Date(dob);
         const today = new Date();
@@ -39,24 +39,25 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 
         if (age < 13 || (age === 12 && (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)))) {
             valid = false;
-            document.getElementById('dobError').textContent = 'You must be at least 13 years old';
+            document.getElementById('dobError').textContent = 'Debes tener por lo menos 13 años';
         }
     }
 
     if (text === '') {
         valid = false;
-        document.getElementById('textError').textContent = 'Please enter a message';
+        document.getElementById('textError').textContent = 'Por favor, escriba un mensaje';
     } else if (text.length > 500) {
         valid = false;
-        document.getElementById('textError').textContent = 'The message must be less than 500 characters';
+        document.getElementById('textError').textContent = 'El mensaje no debe tener mas de 500 caracteres';
     } else if (text.length < 10) {
         valid = false;
-        document.getElementById('textError').textContent = 'The message must be more than 10 characters';
+        document.getElementById('textError').textContent = 'El mensaje debe tener al menos 10 caracteres';
     }
 
     //si pasa todas las validaciones carga el formulario
     if (valid) {
-        alert('Form submitted successfully!');
+        alert('¡El mensaje se ha envíado con éxito!');
+        document.getElementById('registrationForm').reset();
     }
 
 });

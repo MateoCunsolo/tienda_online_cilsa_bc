@@ -70,7 +70,7 @@ let carrito = {
             });
             document.querySelector('.total').innerHTML = `Total: $${this.total.toLocaleString()}`;
         } else {
-            document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
+            document.querySelector('.total').innerHTML = '<p class="total">No hay productos seleccionados</p>';
         }
     }
 
@@ -102,7 +102,7 @@ function cargarASeccion(producto) {
         contador.innerHTML = carrito.productos.length;
         item.remove();
         if (carrito.total === 0) {
-            document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
+            document.querySelector('.total').innerHTML = '<p class="total">No hay productos seleccionados</p>';
             contador.classList.add('blue');
         } else {
             document.querySelector('.total').innerHTML = `Total: $${carrito.total.toLocaleString()}`;   
@@ -128,8 +128,8 @@ function cargarSupplements() {
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
-                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
+                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Añadir al carrito</a>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Detalles</button>
                         </div>
                     </div>
 
@@ -151,7 +151,7 @@ function cargarSupplements() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Añadir al carrito</a>
                                 </div>
                             </div>
                             </div>
@@ -187,8 +187,8 @@ function cargarCloths() {
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
-                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Details</button>
+                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Añadir al carrito</a>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Detalles</button>
                         </div>
                     </div>
 
@@ -209,8 +209,8 @@ function cargarCloths() {
                                     <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Añadir al carrito</a>
                                 </div>
                             </div>
                             </div>
@@ -246,9 +246,9 @@ function cargarAccs() {
                         <div class="card-body">
                             <p class="card-text"><strong>${producto.nombre}</strong></p>
                             <h5 class="card-title">$${producto.precio.toLocaleString()}</h5>
-                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Add to Cart</a>
+                            <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}">Añadir al carrito</a>
                             
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Ver Detalles</button>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-${index}">Detalles</button>
                         </div>
                     </div>
 
@@ -270,7 +270,7 @@ function cargarAccs() {
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Add to Cart</a>
+                                <a href="#" class="btn btn-primary agregar-carrito" data-index="${index}" data-dismiss="modal">Añadir al carrito</a>
                                 </div>
                             </div>
                             </div>
@@ -332,7 +332,7 @@ botonConfirmar.addEventListener('click', () => {
         alert('No hay productos en el carrito');
     } else {
         document.querySelector('.carrito').innerHTML = '';
-        document.querySelector('.total').innerHTML = '<p class="total">There are not products</p>';
+        document.querySelector('.total').innerHTML = '<p class="total">No hay productos seleccionados</p>';
         alert('Compra confirmada, usted debe pagar $' + carrito.total.toLocaleString() + ' por los productos. Le enviaremos un email con los detalles a seguir, gracias por su compra.');
         carrito.eliminarCarrito();
         carrito.guardarCarritoLocalStorage();
